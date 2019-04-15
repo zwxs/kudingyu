@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/course/course",
+    "pages/classification/classification",
+    "pages/profile/profile"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "usingComponents": {},
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#007AFF",
+    "borderStyle": "black",
+    "backgroundColor": "#F8F8F8",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/tab_class.png",
+        "selectedIconPath": "static/tab_class.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/course/course",
+        "iconPath": "static/tab_course.png",
+        "selectedIconPath": "static/tab_course.png",
+        "text": "课程"
+      },
+      {
+        "pagePath": "pages/classification/classification",
+        "iconPath": "static/tab_class.png",
+        "selectedIconPath": "static/tab_class.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "iconPath": "static/tab_profile.png",
+        "selectedIconPath": "static/tab_profile.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

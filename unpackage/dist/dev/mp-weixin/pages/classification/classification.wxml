@@ -1,0 +1,2 @@
+<import src="./classification.vue.wxml" />
+    <template is="05e9927d" data="{{ ...$root['0'], $root }}"/>
