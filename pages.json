@@ -29,31 +29,31 @@
 	},
 	"tabBar": {
 		"color": "#7A7E83",
-		"selectedColor": "#007AFF",
+		"selectedColor": "#ff9b2d",
 		"borderStyle": "black",
 		"backgroundColor": "#F8F8F8",
 		"list": [{
 				"pagePath": "pages/index/index",
-				"iconPath": "static/tab_class.png",
-				"selectedIconPath": "static/tab_class.png",
+				"iconPath": "static/img/icon_首页_默认@2x.png",
+				"selectedIconPath": "static/img/icon_首页_选中@2x.png",
 				"text": "首页"
 			},
 			{
 				"pagePath": "pages/course/course",
-				"iconPath": "static/tab_course.png",
-				"selectedIconPath": "static/tab_course.png",
+				"iconPath": "static/img/icon_课程_默认@2x.png",
+				"selectedIconPath": "static/img/icon_课程_选中@2x.png",
 				"text": "课程"
 			},
 			{
 				"pagePath": "pages/classification/classification",
-				"iconPath": "static/tab_class.png",
-				"selectedIconPath": "static/tab_class.png",
+				"iconPath": "static/img/icon_学习_默认@2x.png",
+				"selectedIconPath": "static/img/icon_学习_选中@2x.png",
 				"text": "分类"
 			},
 			{
 				"pagePath": "pages/profile/profile",
-				"iconPath": "static/tab_profile.png",
-				"selectedIconPath": "static/tab_profile.png",
+				"iconPath": "static/img/icon_我的_默认@2x.png",
+				"selectedIconPath": "static/img/icon_我的_选中@2x.png",
 				"text": "我的"
 			}
 		]
