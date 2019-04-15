@@ -111,6 +111,7 @@ export default {
 			for (let item of this.data) {
 				obj.push(item.imgUrl);
 			}
+			console.log(obj)
 			return obj;
 		}
 	},
