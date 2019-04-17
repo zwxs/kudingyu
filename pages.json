@@ -12,9 +12,11 @@
 			}
 		}, {
 			"path": "pages/course/course",
-			"style": {}
+			"style": {
+				"navigationBarTitleText": "课程"
+			}
 		}, {
-			"path": "pages/classification/classification",
+			"path": "pages/learn/learn",
 			"style": {}
 		}, {
 			"path": "pages/profile/profile",
@@ -45,10 +47,10 @@
 				"text": "课程"
 			},
 			{
-				"pagePath": "pages/classification/classification",
+				"pagePath": "pages/learn/learn",
 				"iconPath": "static/img/icon_学习_默认@2x.png",
 				"selectedIconPath": "static/img/icon_学习_选中@2x.png",
-				"text": "分类"
+				"text": "学习"
 			},
 			{
 				"pagePath": "pages/profile/profile",

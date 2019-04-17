@@ -1,47 +1,86 @@
 <template>
-	<view><swiper-banner height="100" :data="resData" @click="swiperClick"></swiper-banner></view>
+	<view class="row">
+		<block v-for="(item, index) in data" :key="index">
+			<view class="col-xs-6">
+				<view class="course-item">
+					<view>
+						<image class="course-img" :src="item.img"></image>
+					</view>
+					<view>
+						<text class="course-title">{{ item.title }}</text>
+					</view>
+					<view>
+						<text class="course-effect">{{ item.effect }}</text>
+					</view>
+					<view>
+						<text class="course-name">{{ item.name }}</text>
+					</view>
+				</view>
+			</view>
+		</block>
+	</view>
 </template>
 
 <script>
-import swiperBanner from '@/components/wlp-swiper-banner/wlp-swiper-banner.vue';
-
 export default {
-	components: {
-		swiperBanner
-	},
+	components: {},
 	data() {
 		return {
 			data: [
-				{
-					imgUrl: '/static/img/banner1.jpg',
-					link: '加载中...'
-				},
-				{
-					imgUrl: '/static/img/banner2.jpg',
-					link: 'www.baidu.com'
-				},
-				{
-					imgUrl: '/static/img/banner3.jpg',
-					link: 'www.taobao.com'
-				}
+				{ img: '/static/img/课程图标封面-1@2x.png', title: '逻辑思维锻炼', effect: '提升思考的能力', name: '初级课程' },
+				{ img: '/static/img/课程图标封面-1@2x.png', title: '逻辑思维锻炼', effect: '提升思考的能力', name: '初级课程' },
+				{ img: '/static/img/课程图标封面-1@2x.png', title: '逻辑思维锻炼', effect: '提升思考的能力', name: '初级课程' },
+				{ img: '/static/img/课程图标封面-1@2x.png', title: '逻辑思维锻炼', effect: '提升思考的能力', name: '初级课程' }
 			]
 		};
 	},
-	computed: {
-		resData: function() {
-			let obj = [];
-			for (let item of this.data) {
-				obj.push(item.imgUrl);
-			}
-			return obj;
-		}
-	},
-	methods: {
-		swiperClick: function(index) {
-			console.log(this.data[index].link);
-		}
-	}
+	computed: {},
+	methods: {}
 };
 </script>
 
-<style></style>
+<style lang="less">
+*{
+	box-sizing: border-box;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 12upx;
+	background-color: rgb(248, 248, 248);
+	.col-xs-6{
+		width: 50%;
+		
+		padding: 12upx;
+		.course-item{
+			background-color: #fff;
+			border-radius: 16upx;
+			padding-bottom: 36upx;
+			view{
+				text-align: center;
+				line-height: 72upx;
+			}
+			.course-img{
+				width: 248upx;
+				height: 248upx;
+			}
+			.course-title{
+				font-size: 46upx;
+				font-weight: 600;
+			}
+			.course-effect{
+				font-size: 32upx;
+				color:rgb(165, 165, 165);
+			}
+			.course-name{
+				font-size: 24upx;
+				border:2px solid rgb(255, 172, 109);
+				border-radius: 32upx;
+				padding: 10upx 20upx;
+				color:rgb(255, 172, 109);
+			}
+		}
+	}
+}
+</style>

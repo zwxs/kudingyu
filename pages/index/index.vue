@@ -133,28 +133,28 @@ export default {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		line-height: 40px;
+		line-height: 80upx;
 		.left {
-			padding-left: 20px;
+			padding-left: 40upx;
 		}
 		.right {
-			padding-right: 20px;
-			font-size: 30px;
+			padding-right: 40upx;
+			font-size: 60upx;
 		}
 	}
 }
 .scroll-view-x {
 	width: 100%;
 	white-space: nowrap;
-	padding: 20px 0;
+	padding: 40upx 0;
 }
 .scroll-view-item {
-	width: 150px;
-	height: 100px;
-	margin-left: 20px;
+	width: 300upx;
+	height: 200upx;
+	margin-left: 40upx;
 	display: inline-block;
 	.scroll-view-item-img {
-		width: 150px;
+		width: 300upx;
 		height: 100%;
 	}
 }
